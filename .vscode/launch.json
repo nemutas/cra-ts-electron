@@ -1,0 +1,30 @@
+{
+	// IntelliSense を使用して利用可能な属性を学べます。
+	// 既存の属性の説明をホバーして表示します。
+	// 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug Main Process",
+			"type": "node",
+			"stopOnEntry": false,
+			"program": "${workspaceRoot}/main.js",
+			"args": ["test.jpg"],
+			"cwd": "${workspaceRoot}",
+			"preLaunchTask": null,
+			"runtimeArgs": [],
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"linux": {
+				"runtimeExecutable": "${env.HOME}/.nodebrew/node/v6.9.4/bin/electron"
+			},
+			"windows": {
+				"runtimeExecutable": "${env.APPDATA}/npm/node_modules/electron-prebuilt/dist/electron.exe"
+			},
+			"console": "integratedTerminal",
+			"sourceMaps": false,
+			"outFiles": []
+		}
+	]
+}
